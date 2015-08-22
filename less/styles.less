@@ -1,0 +1,227 @@
+
+@fontSize: 15px;
+@padding: 5px;
+@shadow: 1px 1px 1px #615E5E;
+@darkBg: #394D75;
+@activeLink: #B9C7F3;
+
+
+/* Border radius (5px as default) */
+.border-radius (@radius: 5px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
+}
+
+.clear {
+  clear: both;
+}
+
+body {
+  font-size: @fontSize;
+}
+
+
+/* Header section */
+section.header {
+  position: relative;
+  .navbar {
+    border-radius: 0;
+    -moz-border-radius: 0;
+    background: white;
+    border: 0;
+  }
+  /* Defined style of active/opened navbar links */
+  .navbar-default .navbar-nav>.active>a,
+  .navbar-default .navbar-nav>.open>a {
+    background: @darkBg;
+    color: @activeLink;
+    text-shadow: @shadow;
+  }
+  img {
+    width: 100%;
+    margin-top: -40px;
+  }
+  h1 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: url(../images/half-transparent.png);
+    margin: 0;
+    padding: 1%;
+    color: wheat;
+    font-size: 240%;
+  }
+}
+
+/* Properties section */
+section.properties {
+  .wrapper {
+    .list {
+      width: 70%;
+      margin: 4% auto 0 auto;
+      li {
+        float: left;
+        width: 33.3%;
+      }
+      > div.row {
+        margin-bottom: 3%;
+        .thumbnail {
+          position: relative;
+          img {
+            .border-radius();
+            margin-top: 15px;
+          }
+          span.price {
+            position: absolute;
+            top: 5%;
+            right: 10%;
+            padding: @padding (@padding * 3);
+            .border-radius();
+            background: white;
+            font-size: @fontSize * 1.2;
+          }
+        }
+      }
+      > div.row:last-child {
+        margin-bottom: 0;
+      }
+    }
+    nav {
+      margin: auto;
+      max-width: 270px;
+      font-size: @fontSize * 1.4;
+    }
+    .enquiry {
+      background: #EEEEEE;
+      text-align: center;
+      padding: 8% 0;
+      a {
+        color: #337AB7;
+        border: 3px #337AB7 solid;
+        padding: (@padding * 2.5) (@padding * 5);
+        .border-radius(50px);
+        font-size: @fontSize * 2;
+      }
+      a:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+/* Footer */
+footer {
+  background: @darkBg;
+  padding: @padding;
+  .wrapper {
+    margin: 2% 20%;
+    ul.menu {
+      color: @activeLink;
+      list-style-type: none;
+      li {
+        float: left;
+        width: 33.3%;
+        li {
+          float: none;
+          a {
+            color: @activeLink;
+          }
+        }
+      }
+    }
+  }
+  .copyrights {
+    color: @activeLink;
+    font-size: @fontSize / 1.3;
+  }
+}
+
+/* For devices <= 1000px of resolution width */
+@media (max-width: 1150px) {
+  section.properties .wrapper .list {
+    width: 85%;
+  }
+}
+
+/* For devices <= 1000px of resolution width */
+@media (max-width: 1050px) {
+  section.properties .wrapper .list {
+    width: 95%;
+  }
+}
+
+/* For devices <= 920px of resolution width */
+@media (max-width: 920px) {
+  section.header {
+    .navbar {
+      .form-group, button[type='submit'] {
+        display: none;
+      }
+    }
+  }
+  footer {
+    background: @darkBg;
+    padding: @padding;
+    .wrapper {
+      margin: 2% 10%;
+    }
+  }
+}
+
+/* For devices <= 760px of resolution width */
+@media (max-width: 765px) {
+  section.properties .wrapper .list > div.row .thumbnail span.price {
+    position: static;
+  }
+}
+
+/* For devices <= 920px of resolution width */
+@media (max-width: 660px) {
+  section.header h1 {
+    text-align: center;
+    font-size: @fontSize * 1.5;
+    text-shadow: @shadow;
+  }
+  section.properties {
+    .wrapper {
+      nav {
+        max-width: 235px;
+        font-size: @fontSize;
+      }
+      .enquiry a {
+        font-size: @fontSize * 1.2;
+      }
+    }
+  }
+  footer {
+    background: @darkBg;
+    padding: @padding;
+    .wrapper {
+      margin: 2%;
+      ul {
+        margin: 0;
+        padding: 0;
+      }
+      ul.menu {
+        li.links {
+          margin-bottom: 20px;
+        }
+        li {
+          width: 100%;
+          float: none;
+          list-style-type: none;
+          a {
+            padding: (@padding / 2.5) @padding;
+            display: block;
+          }
+          a:hover {
+            text-decoration: none;
+            background: darken(@darkBg, 10%);
+            color: @activeLink;
+          }
+        }
+      }
+    }
+  }
+}

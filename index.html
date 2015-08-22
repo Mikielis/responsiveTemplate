@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Products list (AngularJS)</title>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <section class="header">
+        <header>
+            <div class="wrapper">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="#">Brand</a>
+                        </div>
+
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="#">Properties <span class="sr-only">(current)</span></a></li>
+                                <li><a href="#">Buy</a></li>
+                                <li><a href="#">Sell</a></li>
+                                <li><a href="#">Rent</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About us <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Company</a></li>
+                                        <li><a href="#">History</a></li>
+                                        <li><a href="#">Successes</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#">Career</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <form class="navbar-form navbar-left" role="search">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Search">
+                                </div>
+                                <button type="submit" class="btn btn-default">Submit</button>
+                            </form>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Panel account <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Sign in</a></li>
+                                        <li><a href="#">Sign up</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#">FAQ</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+                    </div><!-- /.container-fluid -->
+                </nav>
+                <img src="images/castle.png" alt="" titl="">
+            </div>
+        </header>
+        <h1 class="caption">Find your dream place</h1>
+    </section>
+
+    <section class="properties">
+        <div class="wrapper">
+            <div class="list">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <span class="price">1099£/week</span>
+                            <img alt="" src="images/property-1.jpg" data-holder-rendered="true">
+                            <div class="caption">
+                                <h3>Lorem ipsum dolor sit amet</h3>
+                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                <p><a href="#" class="btn btn-primary" role="button">Make an enquiry</a> <a href="#" class="btn btn-default" role="button">Show details</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <span class="price">1099£/week</span>
+                            <img alt="" src="images/property-2.jpg" data-holder-rendered="true">
+                            <div class="caption">
+                                <h3>Lorem ipsum dolor sit amet</h3>
+                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                <p><a href="#" class="btn btn-primary" role="button">Make an enquiry</a> <a href="#" class="btn btn-default" role="button">Show details</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <span class="price">1099£/week</span>
+                            <img alt="" src="images/property-3.jpg" data-holder-rendered="true">
+                            <div class="caption">
+                                <h3>Lorem ipsum dolor sit amet</h3>
+                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                <p><a href="#" class="btn btn-primary" role="button">Make an enquiry</a> <a href="#" class="btn btn-default" role="button">Show details</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <span class="price">1099£/week</span>
+                            <img alt="" src="images/property-1.jpg" data-holder-rendered="true">
+                            <div class="caption">
+                                <h3>Lorem ipsum dolor sit amet</h3>
+                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                <p><a href="#" class="btn btn-primary" role="button">Make an enquiry</a> <a href="#" class="btn btn-default" role="button">Show details</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <span class="price">1099£/week</span>
+                            <img alt="" src="images/property-2.jpg" data-holder-rendered="true">
+                            <div class="caption">
+                                <h3>Lorem ipsum dolor sit amet</h3>
+                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                <p><a href="#" class="btn btn-primary" role="button">Make an enquiry</a> <a href="#" class="btn btn-default" role="button">Show details</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <span class="price">1099£/week</span>
+                            <img alt="" src="images/property-3.jpg" data-holder-rendered="true">
+                            <div class="caption">
+                                <h3>Lorem ipsum dolor sit amet</h3>
+                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                <p><a href="#" class="btn btn-primary" role="button">Make an enquiry</a> <a href="#" class="btn btn-default" role="button">Show details</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <span class="price">1099£/week</span>
+                            <img alt="" src="images/property-1.jpg" data-holder-rendered="true">
+                            <div class="caption">
+                                <h3>Lorem ipsum dolor sit amet</h3>
+                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                <p><a href="#" class="btn btn-primary" role="button">Make an enquiry</a> <a href="#" class="btn btn-default" role="button">Show details</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <span class="price">1099£/week</span>
+                            <img alt="" src="images/property-2.jpg" data-holder-rendered="true">
+                            <div class="caption">
+                                <h3>Lorem ipsum dolor sit amet</h3>
+                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                <p><a href="#" class="btn btn-primary" role="button">Make an enquiry</a> <a href="#" class="btn btn-default" role="button">Show details</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <span class="price">1099£/week</span>
+                            <img alt="" src="images/property-3.jpg" data-holder-rendered="true">
+                            <div class="caption">
+                                <h3>Lorem ipsum dolor sit amet</h3>
+                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                <p><a href="#" class="btn btn-primary" role="button">Make an enquiry</a> <a href="#" class="btn btn-default" role="button">Show details</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <nav>
+                <ul class="pagination">
+                    <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+                    <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+                </ul>
+            </nav>
+
+            <div class="enquiry">
+                <a href="#"><span class="glyphicon glyphicon-ok"></span> Make an enquiry</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="wrapper">
+            <ul class="menu">
+                <li class="links">
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Policy</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </li>
+
+                <li class="links">
+                    <ul>
+                        <li><a href="#">Appartements</a></li>
+                        <li><a href="#">Houses</a></li>
+                        <li><a href="#">Villas</a></li>
+                        <li><a href="#">Mansions</a></li>
+                        <li><a href="#">Find more</a></li>
+                    </ul>
+                </li>
+
+                <li class="links">
+                    <ul>
+                        <li><a href="#">New York</a></li>
+                        <li><a href="#">Los Anglos</a></li>
+                        <li><a href="#">Miami</a></li>
+                        <li><a href="#">Washington</a></li>
+                        <li><a href="#">Find more</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <br class="clear">
+        </div>
+
+        <div class="copyrights">
+            Copyright © 2015 Kamil Mikielis. All Rights Reserved.
+        </div>
+    </footer>
+</body>
+</html>

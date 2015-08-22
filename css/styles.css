@@ -1,0 +1,196 @@
+/* Border radius (5px as default) */
+.clear {
+  clear: both;
+}
+body {
+  font-size: 15px;
+}
+/* Header section */
+section.header {
+  position: relative;
+  /* Defined style of active/opened navbar links */
+}
+section.header .navbar {
+  border-radius: 0;
+  -moz-border-radius: 0;
+  background: white;
+  border: 0;
+}
+section.header .navbar-default .navbar-nav > .active > a,
+section.header .navbar-default .navbar-nav > .open > a {
+  background: #394d75;
+  color: #b9c7f3;
+  text-shadow: 1px 1px 1px #615e5e;
+}
+section.header img {
+  width: 100%;
+  margin-top: -40px;
+}
+section.header h1 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: url(../images/half-transparent.png);
+  margin: 0;
+  padding: 1%;
+  color: wheat;
+  font-size: 240%;
+}
+/* Properties section */
+section.properties .wrapper .list {
+  width: 70%;
+  margin: 4% auto 0 auto;
+}
+section.properties .wrapper .list li {
+  float: left;
+  width: 33.3%;
+}
+section.properties .wrapper .list > div.row {
+  margin-bottom: 3%;
+}
+section.properties .wrapper .list > div.row .thumbnail {
+  position: relative;
+}
+section.properties .wrapper .list > div.row .thumbnail img {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+section.properties .wrapper .list > div.row .thumbnail span.price {
+  position: absolute;
+  top: 5%;
+  right: 10%;
+  padding: 5px 15px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background: white;
+  font-size: 18px;
+}
+section.properties .wrapper .list > div.row:last-child {
+  margin-bottom: 0;
+}
+section.properties .wrapper nav {
+  margin: auto;
+  max-width: 270px;
+  font-size: 21px;
+}
+section.properties .wrapper .enquiry {
+  background: #EEEEEE;
+  text-align: center;
+  padding: 8% 0;
+}
+section.properties .wrapper .enquiry a {
+  color: #337AB7;
+  border: 3px #337AB7 solid;
+  padding: 12.5px 25px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  font-size: 30px;
+}
+section.properties .wrapper .enquiry a:hover {
+  text-decoration: none;
+}
+/* Footer */
+footer {
+  background: #394d75;
+  padding: 5px;
+}
+footer .wrapper {
+  margin: 2% 20%;
+}
+footer .wrapper ul.menu {
+  color: #b9c7f3;
+  list-style-type: none;
+}
+footer .wrapper ul.menu li {
+  float: left;
+  width: 33.3%;
+}
+footer .wrapper ul.menu li li {
+  float: none;
+}
+footer .wrapper ul.menu li li a {
+  color: #b9c7f3;
+}
+footer .copyrights {
+  color: #b9c7f3;
+  font-size: 11.53846154px;
+}
+/* For devices <= 1000px of resolution width */
+@media (max-width: 1150px) {
+  section.properties .wrapper .list {
+    width: 85%;
+  }
+}
+/* For devices <= 1000px of resolution width */
+@media (max-width: 1050px) {
+  section.properties .wrapper .list {
+    width: 95%;
+  }
+}
+/* For devices <= 920px of resolution width */
+@media (max-width: 920px) {
+  section.header .navbar .form-group,
+  section.header .navbar button[type='submit'] {
+    display: none;
+  }
+  footer {
+    background: #394d75;
+    padding: 5px;
+  }
+  footer .wrapper {
+    margin: 2% 10%;
+  }
+}
+/* For devices <= 760px of resolution width */
+@media (max-width: 765px) {
+  section.properties .wrapper .list > div.row .thumbnail span.price {
+    position: static;
+  }
+}
+/* For devices <= 920px of resolution width */
+@media (max-width: 660px) {
+  section.header h1 {
+    text-align: center;
+    font-size: 22.5px;
+    text-shadow: 1px 1px 1px #615e5e;
+  }
+  section.properties .wrapper nav {
+    max-width: 235px;
+    font-size: 15px;
+  }
+  section.properties .wrapper .enquiry a {
+    font-size: 18px;
+  }
+  footer {
+    background: #394d75;
+    padding: 5px;
+  }
+  footer .wrapper {
+    margin: 2%;
+  }
+  footer .wrapper ul {
+    margin: 0;
+    padding: 0;
+  }
+  footer .wrapper ul.menu li.links {
+    margin-bottom: 20px;
+  }
+  footer .wrapper ul.menu li {
+    width: 100%;
+    float: none;
+    list-style-type: none;
+  }
+  footer .wrapper ul.menu li a {
+    padding: 2px 5px;
+    display: block;
+  }
+  footer .wrapper ul.menu li a:hover {
+    text-decoration: none;
+    background: #283653;
+    color: #b9c7f3;
+  }
+}
